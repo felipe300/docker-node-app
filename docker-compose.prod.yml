@@ -10,9 +10,9 @@ services:
         - NODE_ENV=production
     environment:
       - NODE_ENV=production
-      - MONGO_USER=${MONGO_USER}
+      - MONGO_USERNAME=${MONGO_USERNAME}
       - MONGO_PASSWORD=${MONGO_PASSWORD}
-      - SESSION_SECRET=${SESSION_SECRET}
+      - SESSION_SECRET=${REDIS_SESSION_SECRET}
     command: node index.js
   mongo:
     environment:
